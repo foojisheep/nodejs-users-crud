@@ -1,0 +1,27 @@
+## MYSQL
+`CREATE TABLE users (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    full_name VARCHAR(255) NULL,
+    phone_number VARCHAR(255) NULL,
+    date_of_birth DATE NULL,
+    age INT NULL,
+    PRIMARY KEY (id)
+);`
+
+# How to run
+1. run `sls offline start` in terminal
+2. run `node index.js` in another terminal
+
+# How to run unit test
+1. run `sls offline start` in terminal
+2. run `npm test` in terminal
+
+# Test on API:
+- Run `localhost:3000` in Thunder Client
+1. POST /users
+2. PUT /users/:id
+3. GET /users
+4. GET /users/:id
+5. DELETE /users/:id
